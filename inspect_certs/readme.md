@@ -1,0 +1,4 @@
+
+```
+awk 'BEGIN {c=0;} /BEGIN CERT/ {c++} { print > ("cert" c ".pem") }' < fullchain.pem
+```
